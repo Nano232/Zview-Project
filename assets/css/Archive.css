@@ -1,0 +1,592 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #ff5e15;
+    --background-color: #110f14;
+    --darck-color: #15151a;
+    --color: #f6f6f6;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    transition: all 1s;
+}
+/* -- start - heading -- */
+.header{
+    background-image: url(../images/page-banner.jpg);
+    height: 60vh;
+    background-size: auto;
+    overflow-y: hidden;
+}
+.header .container{
+    padding: 50px 0;
+}
+.header .container .links{
+    text-align: center;
+    padding: 10px 100px;
+}
+.header .container .links ul{
+    display: flex;
+    justify-content: space-between;
+}
+.header .container .links ul li{
+    list-style-type: none;
+}
+.header .container .links ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .5s;
+}
+.header .container .links ul li a.activ{
+    color: var(--main-color);
+}
+.header .container .links ul li a:hover{
+    color: var(--main-color);
+}
+.header .container .menu{
+    width: auto;
+    color: white;
+    cursor: pointer;
+    padding: 10px 0; 
+    transition: .5s;
+}
+.header .container .menu:hover{
+    color: var(--main-color);
+}
+.header .content{
+    padding-top: 100px;
+}
+.header .content .title h4{
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+}
+.header .content ul{
+    display: flex;
+    padding-top: 30px;
+}
+.header .content .ul li{
+    list-style-type: none;
+}
+.header .content .ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .5s;
+}
+.header .content .ul li a:hover{
+    color: var(--main-color);
+}
+.header .content .ul li p{
+    padding-left: 40px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+@media (max-width: 1000px) {
+    .header .content{
+        width: 100%;
+    }
+    .header .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header .links{
+        display: none;
+    }
+}
+/* -- end - heading -- */
+/* -- start - body -- */
+    .body{
+        margin-top: 100px;
+    }
+/* -- end - body -- */
+/* -- start - right -- */
+.right .first{
+    margin-bottom: 100px;
+}
+.right .first .image{
+    width: 100%;
+}
+.right .first .image img{
+    width: 100%;
+}
+.right .first .content ul{
+    display: flex;
+    padding: 5px 0;
+}
+.right .first .content ul li{
+    list-style-type: none;
+}
+.right .first .content ul li a{
+    text-decoration: none;
+    color: #777777;
+}
+.right .first .content ul li a:hover{
+    color: var(--main-color);
+}
+.right .first .content h3 a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.right .first .content h3 a:hover{
+    color: var(--main-color);
+}
+.right .first .content span{
+    display: block;
+    padding-bottom: 10px;
+}
+.right .first .content span a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.right .first .content p{
+    padding-bottom: 20px;
+}
+.right .first .content .link{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 20px 30px;
+}
+.right .first .content .link:hover{
+    color: white;
+    background-color: var(--main-color);
+}
+
+.right .second{
+    margin-bottom: 100px;
+}
+.right .second .content ul{
+    display: flex;
+    padding: 5px 0;
+}
+.right .second .content ul li{
+    list-style-type: none;
+}
+.right .second .content ul li a{
+    text-decoration: none;
+    color: #777777;
+}
+.right .second .content ul li a:hover{
+    color: var(--main-color);
+}
+.right .second .content h3 a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.right .second .content h3 a:hover{
+    color: var(--main-color);
+}
+.right .second .content span{
+    display: block;
+    padding-bottom: 10px;
+}
+.right .second .content span a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.right .second .content p{
+    padding-bottom: 20px;
+}
+.right .second .content .link{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 20px 30px;
+}
+.right .second .content .link:hover{
+    color: white;
+    background-color: var(--main-color);
+}
+
+
+.right .third{
+    margin-bottom: 100px;
+    padding: 30px;
+    border: 20px solid rgba(255, 94, 21, 0.1);
+}
+.right .third .display{
+    display: flex;
+    padding-bottom: 20px;
+}
+.right .third .display .title{
+    padding-left: 20px;
+}
+.right .third .display .title h5{
+    color: var(--main-color);
+}
+.right .third .display .title span a{
+    text-decoration: none;
+    color: #777777;
+}
+.right .third .content ul{
+    display: flex;
+    padding: 5px 0;
+}
+.right .third .content ul li{
+    list-style-type: none;
+}
+.right .third .content ul li a{
+    text-decoration: none;
+    color: #777777;
+}
+.right .third .content ul li a:hover{
+    color: var(--main-color);
+}
+.right .third .content h3 a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.right .third .content h3 a:hover{
+    color: var(--main-color);
+}
+.right .third .content span{
+    display: block;
+    padding-bottom: 10px;
+}
+.right .third .content span a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.right .third .content p{
+    padding-bottom: 20px;
+}
+.right .third .content .link{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 20px 30px;
+}
+.right .third .content .link:hover{
+    color: white;
+    background-color: var(--main-color);
+}
+
+/* -- end - right -- */
+/* -- start - left -- */
+.left .first{
+    background-color: var(--color);
+    text-align: center;
+    padding: 20px 30px;
+}
+.left .first .img img{
+    border-radius: 50%;
+    position: relative;
+}
+.left .first .content h4{
+    padding-top: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.left .first .content p{
+    color: #777777;
+}
+.left .first .link a{
+    color: #777777;
+    text-decoration: none;
+    transition: .5s;
+}
+.left .first .link a:hover{
+    color: var(--main-color);
+}
+.left .second{
+    background-color: var(--color);
+    margin: 50px 0;
+    padding: 20px 30px;
+}
+.left .second .title{
+    padding-bottom: 10px;
+}
+.left .second .title h4{
+    color: var(--main-color);
+    font-weight: bold;
+}
+.left .second .search{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.left .second .search input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 94, 21, 0.1);
+    padding: 0 20px;
+    color: var(--main-color);
+    font-size: 16px;
+    border-radius: 5px;
+}
+.left .third{
+    background-color: var(--color);
+    margin: 50px 0;
+    padding: 20px 30px;
+}
+.left .third .title h4{
+    color: var(--main-color);
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.left .third .list ul{
+    padding-left: 0;
+}
+.left .third .list ul li{
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+.left .third .list ul li a{
+    text-decoration: none;
+    transition: .5s;
+    color: #777777;
+}
+.left .third .list ul li a:hover{
+    color: var(--main-color);
+}
+.left .third .list ul li a span{
+    float: right;
+}
+.left .fourth{
+    background-color: var(--color);
+    margin: 50px 0;
+    padding: 20px 30px;
+}
+.left .fourth .title h4{
+    color: var(--main-color);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.left .container ul li{
+    list-style-type: none;
+    padding-top: 40px;
+}
+.left .container ul li .display{
+    display: flex;
+    justify-content: space-between;
+}
+.left .container ul li .display .image{
+    width: 100%;
+}
+.left .container ul li .display .image img{
+    width: 100px;
+}
+.left .container ul li .display .image a{
+    text-decoration: none;
+}
+.left .container ul li .display .content .head a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+.left .container ul li .display .content .one a{
+    color: #777777;
+    text-decoration: none;
+    font-weight: bold;
+}
+.left .container ul li .display .content .two a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+.left .fifth{
+    background-color: var(--color);
+    margin: 50px 0;
+    padding: 20px 30px;
+}
+.left .fifth .title h4{
+    color: var(--main-color);
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.left .links ul{
+    padding-left: 0;
+}
+.left .links ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0 3px;
+}
+.left .links ul li a{
+    text-decoration: none;
+    color: #777777;
+    background-color: #f2f9fa;
+    padding: 10px;
+    height: 10px;
+    line-height: 40px;
+    transition: .5s;
+}
+.left .links ul li a:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+/* -- end - left -- */
+/* -- end - body -- */
+/* -- start - about -- */
+.about .container .images{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.about .container .images div{
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* -- end - about -- */
+/* -- start - footer -- */
+.footer{
+    background-image: url(../images/footer-bg.jpg);
+    background-size: cover;
+    padding-top: 200px;
+}
+.footer .first{
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.footer .first .title{
+    padding: 30px 0;
+}
+.footer .first .title p{
+    color: #777777;
+}
+.footer .first .list ul{
+    display: flex;
+    padding-left: 0;
+}
+.footer .first .list ul li{
+    list-style-type: none;
+}
+.footer .first .list ul li.x{
+    padding-left: 50px;
+}
+.footer .first .list ul li a{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+.footer .first .list ul li a:hover{
+    color: var(--main-color);
+}
+.footer .second{
+    padding: 0 30px;
+    margin-top: 50px;
+}
+.footer .second h4{
+    color: white;
+}
+.footer .second p.second-title{
+    color: white;
+    padding: 30px 0;
+}
+.footer .second p span{
+    color: var(--main-color);
+}
+.footer .second ul{
+    padding: 0;
+}
+.footer .second ul li{
+    list-style-type: none;
+}
+.footer .second ul li .display{
+    display: flex;
+    padding: 10px 0;
+}
+.footer .second ul li .display div.i{
+    color: white;
+    width: 30px;
+    padding-right: 10px;
+}
+.footer .second ul li .display p{
+    padding-left: 20px;
+}
+.footer .second ul li .display p a{
+    color: #777777;
+    transition: .5s;
+}
+.footer .second ul li .display div.display-p{
+    color: #777777;
+    transition: .5s;
+}
+.footer .second ul li .display p a:hover{
+    color: var(--main-color);
+}
+.footer .second ul li .display div.display-p:hover{
+    color: var(--main-color);
+}
+.footer .third{
+    padding: 0 30px;
+    margin-top: 50px;
+}
+.footer .third .third-title h4{
+    color: white;
+}
+.footer .third .third-title h4 span{
+    color: var(--main-color);
+}
+.footer .third .third-content{
+    padding: 30px 0;
+    display: flex;
+}
+.footer .third .third-content label{
+    color: white;
+    padding-bottom: 10px;
+}
+.footer .third .third-content input{
+    padding: 10px;
+    width: 80%;
+    border: none;
+    background-color: #12111c;
+    color: white;
+}
+.footer .third .third-textarea{
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.footer .third .third-textarea div{
+    display: block;
+}
+.footer .third .third-textarea div label{
+    width: 100%;
+    color: white;
+    padding-bottom: 10px;
+}
+.footer .third .third-textarea div textarea{
+    width: 100%;
+    height: 7rem;
+    padding: 10px 10px;
+    border: none;
+    background-color: #12111c;
+    color: white;
+}
+.footer .third .third-button{
+    width: auto;
+}
+.footer .third .third-button a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: .5s;
+    padding: 20px 30px ;
+    background-color: var(--main-color);
+}
+.footer .third .third-button a:hover{
+    color: black;
+    background-color: white;
+}
+#name{
+    color: white;
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+/* -- end - footer -- */

@@ -1,0 +1,730 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #ff5e15;
+  --background-color: #110f14;
+  --darck-color: #15151a;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+  transition: all 1s;
+}
+/* -- start - heading -- */
+.header {
+  background-image: url(../images/slider-1.jpg);
+  height: 100vh;
+  background-size: cover;
+  overflow-y: hidden;
+}
+.header .nav {
+  position: fixed;
+}
+.header .container {
+  padding: 50px 0;
+}
+.header .container .links {
+  text-align: center;
+  padding: 10px 100px;
+}
+.header .container .links ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header .container .links ul li {
+  list-style-type: none;
+}
+.header .container .links ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.5s;
+}
+.header .container .links ul li a.activ {
+  color: var(--main-color);
+}
+.header .container .links ul li a:hover {
+  color: var(--main-color);
+}
+
+.header .container .drop-menu {
+  position: relative;
+}
+.header .container .drop-menu:hover .drop {
+  display: block !important;
+}
+.header .container .drop {
+  position: absolute;
+  top: 25px;
+  left: -10px;
+  padding: 10px 10px 10px 0;
+  width: 150px;
+  background-color: rgb(119, 119, 119);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  display: none !important;
+}
+.header .container .drop li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header .container .drop li a {
+  display: block;
+  width: 100%;
+  padding: 15px;
+}
+
+.header .container .menu {
+  width: auto;
+  color: white;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: 0.5s;
+  display: none;
+}
+.header .container .menu:hover {
+  color: var(--main-color);
+}
+.header .content {
+  padding-left: 10px;
+  margin-top: 200px;
+  width: 40%;
+  color: white;
+}
+.header .content .nav {
+  position: fixed;
+}
+.header .content span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.header .content h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.header .content p {
+  word-spacing: 5px;
+}
+.header .content a {
+  color: white;
+  width: auto;
+  text-decoration: none;
+  padding: 20px 30px 20px 20px;
+  border-bottom: 1px solid var(--main-color);
+  transition: 0.5s;
+}
+.header .content a:hover {
+  color: var(--main-color);
+}
+@media (max-width: 1000px) {
+  .header .content {
+    width: 100%;
+  }
+  .header .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .container .menu {
+    display: block;
+  }
+  .header .container .drop {
+    top: -43px;
+    left: 70px;
+  }
+  .header .container .links {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: auto;
+    background-color: #777777;
+    display: flex;
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left: -100%;
+    transition: all 0.5s;
+  }
+  .header .container .links ul {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .container .links ul li {
+    margin: 20px 0;
+  }
+}
+/* -- end - heading -- */
+/* -- start - about -- */
+.about {
+  background-color: var(--background-color);
+  padding: 100px 0;
+}
+.about .heading {
+  width: 100%;
+}
+.about .heading h6 {
+  color: var(--main-color);
+  margin: 10px;
+  font-weight: bold;
+}
+.about h2 {
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+}
+.about h2 span {
+  color: var(--main-color);
+}
+.about .container .content h2 {
+  font-size: 296px;
+  mask-image: url(../images/text-bg.jpg);
+  mask-repeat: no-repeat;
+  line-height: 284px;
+}
+.about .container .content .title {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.about .container .content .title h4 {
+  color: white;
+}
+.about .container .content .title h6 {
+  color: var(--main-color);
+  margin: 30px 0;
+}
+.about .container .content .title p {
+  color: #777777;
+}
+.about .container .content .title a {
+  color: white;
+  width: auto;
+  text-decoration: none;
+  margin: 30px 0;
+  padding: 10px 20px 10px 0;
+  transition: 0.5s;
+  border-bottom: 1px solid var(--main-color);
+}
+.about .container .content .title a:hover {
+  color: var(--main-color);
+}
+.about .container .images {
+  margin-top: 100px;
+}
+.about .container .images div {
+  padding: 20px 0;
+  position: relative;
+  text-align: center;
+  border: 1px solid rgba(236, 239, 248, 0.1);
+}
+/* -- end - about -- */
+/* -- start - projects -- */
+.projects {
+  padding-top: 100px;
+  overflow: hidden;
+  background-color: #110f14;
+}
+.projects .container {
+  padding-bottom: 50px;
+}
+.projects .container .first h6 {
+  color: var(--main-color);
+}
+.projects .container .first h2 {
+  color: white;
+}
+.projects .container .second {
+  padding-top: 20px;
+}
+.projects .container .second ul {
+  display: flex;
+  justify-content: space-between;
+}
+.projects .container .second ul li {
+  list-style-type: none;
+}
+.projects .container .second ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  transition: 0.5s;
+}
+.projects .container .second ul li a:hover {
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+.projects .container .second ul li a.activ {
+  border-bottom: 1px solid var(--main-color);
+}
+.projects .images {
+  overflow-x: hidden;
+}
+.projects .images img {
+  width: 100%;
+  margin: 20px 0;
+}
+.projects .link div {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px 0;
+  text-align: center;
+}
+.projects .link div a {
+  background-color: var(--darck-color);
+  padding: 15px 40px;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.projects .link div a:hover {
+  background-color: var(--main-color);
+}
+@media (max-width: 1000px) {
+  .projects .container .second {
+    display: none;
+  }
+}
+/* -- end - projects -- */
+/* -- start - services -- */
+.services {
+  background-color: #110f14;
+  padding-top: 70px;
+  padding-bottom: 200px;
+}
+.services .title {
+  text-align: center;
+  margin: auto;
+  width: 70%;
+}
+.services .title h6 {
+  color: var(--main-color);
+  padding-bottom: 10px;
+}
+.services .title h2 {
+  font-weight: bold;
+  color: white;
+}
+.services .content {
+  margin-top: 50px;
+}
+.services .content .x {
+  padding: 40px 20px;
+}
+.services .content .x .parent {
+  border: 3px solid transparent;
+  padding: 30px;
+  transition: 0.5s;
+  background-color: var(--darck-color);
+}
+.services .content .x .parent:hover {
+  border: 3px solid var(--main-color);
+}
+.services .content .x .parent span {
+  display: block;
+  color: var(--main-color);
+  padding-bottom: 10px;
+}
+.services .content .x .parent h4 {
+  display: block;
+  color: var(--main-color);
+  padding-bottom: 10px;
+}
+.services .content .x .parent h4 a {
+  text-decoration: none;
+  color: white;
+}
+.services .content .x .parent p {
+  padding-bottom: 10px;
+}
+.services .content .x .parent .last {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.services .content .x .parent .last a {
+  color: #777777;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+.services .content .x .parent .last a:hover {
+  color: var(--main-color);
+}
+@media (max-width: 980px) {
+  .services .title {
+    width: 100%;
+  }
+}
+/* -- end - services -- */
+/* -- start - container-fluid -- */
+.orange {
+  background-image: url(../images/counter-bg.jpg);
+  position: relative;
+  z-index: 1;
+}
+.orange::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 94, 21, 0.75);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.orange .row {
+  color: white;
+  padding: 400px 0 100px;
+}
+.orange .row {
+  color: white;
+  padding: 200px 0 200px;
+}
+.orange .row .content div {
+  padding: 30px 50px;
+  margin: 10px auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.orange .row .content div span {
+  font-size: 50px;
+}
+/* -- end - container-fluid -- */
+/* -- start - skills -- */
+.skills {
+  background-color: var(--background-color);
+  padding: 150px 0;
+}
+.skills .image img {
+  width: 100%;
+}
+.skills .title {
+  margin-top: 50px;
+}
+.skills .title .content {
+  width: 80%;
+}
+.skills .title .content h4 {
+  color: white;
+  padding: 20px 0;
+}
+.skills .title .content h2 {
+  color: var(--main-color);
+}
+.skills .title .content p {
+  color: #777777;
+}
+.skills .title .content .parent {
+  margin-top: 50px;
+}
+.skills .title .content .parent h6 {
+  color: white;
+  margin-bottom: 15px;
+}
+.skills .title .content .parent .first {
+  width: 100%;
+  height: 3px;
+  background-color: #15151a;
+}
+.skills .title .content .parent-one .first .second {
+  width: 70%;
+  height: 3px;
+  transition: 1s;
+  background-color: var(--main-color);
+}
+.skills .title .content .parent-one .first .second:hover {
+  width: 100%;
+}
+.skills .title .content .parent-two .first .second {
+  width: 90%;
+  height: 3px;
+  transition: 1s;
+  background-color: var(--main-color);
+}
+.skills .title .content .parent-two .first .second:hover {
+  width: 100%;
+}
+.skills .title .content .parent-three .first .second {
+  width: 80%;
+  height: 3px;
+  transition: 1s;
+  background-color: var(--main-color);
+}
+.skills .title .content .parent-three .first .second:hover {
+  width: 100%;
+}
+/* -- end - skills -- */
+/* -- start - author -- */
+.author {
+  padding: 100px 0;
+  background-image: url(../images/testimonial-bg.jpg);
+}
+.author .container .first {
+  margin: 100px 0;
+}
+.author .container .first h6 {
+  color: var(--main-color);
+}
+.author .container .first h2 {
+  color: white;
+  font-weight: bold;
+}
+.author .container .second {
+  background-color: var(--main-color);
+  padding: 100px;
+  border-radius: 20px;
+  color: white;
+}
+.author .container .second .content {
+  display: flex;
+  margin-top: 30px;
+}
+.author .container .second .content .second-image img {
+  border-radius: 50%;
+}
+.author .container .second .content .second-content {
+  padding: 0 30px;
+}
+.author .container .second .content .second-content p {
+  line-height: 30px;
+}
+.author .container .second .content .second-content h4 {
+  font-weight: bold;
+  padding-top: 20px;
+}
+.author .container .second .content .second-content h4 span {
+  font-size: small;
+}
+@media (max-width: 770px) {
+  .author .container .second {
+    padding: 100px 0;
+  }
+  .author .container .second .content {
+    display: block;
+    margin-top: 30px;
+  }
+  .author .container .second .content .second-content {
+    padding: 50px 30px;
+  }
+  .author .container .second .content .second-image {
+    padding-left: 30px;
+  }
+}
+/* -- end - author -- */
+/* -- start - blog -- */
+.blog {
+  padding: 100px 0;
+  background-color: var(--background-color);
+}
+.blog .heading {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.blog .heading h6 {
+  color: var(--main-color);
+}
+.blog .heading h2 {
+  color: white;
+  font-weight: bold;
+}
+.blog .content .main {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.blog .content .main .img {
+  overflow: hidden;
+  transition: all 1s;
+}
+.blog .content .main .img img:hover {
+  transform: scale(1.2, 1.2);
+}
+.blog .content .main .title h6 {
+  color: var(--main-color);
+  padding: 20px 0;
+}
+.blog .content .main .title h6 span {
+  color: #777777;
+}
+.blog .content .main .title h5 {
+  color: white;
+  line-height: 30px;
+}
+.blog .link div {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+}
+.blog .link div a {
+  background-color: var(--darck-color);
+  padding: 25px 40px;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.blog .link div a:hover {
+  background-color: var(--main-color);
+}
+
+@media (max-width: 990px) {
+  .blog .content .main .img img {
+    width: 100%;
+  }
+}
+
+/* -- end - blog -- */
+/* -- start - footer -- */
+.footer {
+  background-image: url(../images/footer-bg.jpg);
+  background-size: cover;
+  padding-top: 200px;
+}
+.footer .first {
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.footer .first .title {
+  padding: 30px 0;
+}
+.footer .first .title p {
+  color: #777777;
+}
+.footer .first .list ul {
+  display: flex;
+  padding-left: 0;
+}
+.footer .first .list ul li {
+  list-style-type: none;
+}
+.footer .first .list ul li.x {
+  padding-left: 50px;
+}
+.footer .first .list ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.footer .first .list ul li a:hover {
+  color: var(--main-color);
+}
+.footer .second {
+  padding: 0 30px;
+  margin-top: 50px;
+}
+.footer .second h4 {
+  color: white;
+}
+.footer .second p.second-title {
+  color: white;
+  padding: 30px 0;
+}
+.footer .second p span {
+  color: var(--main-color);
+}
+.footer .second ul {
+  padding: 0;
+}
+.footer .second ul li {
+  list-style-type: none;
+}
+.footer .second ul li .display {
+  display: flex;
+  padding: 10px 0;
+}
+.footer .second ul li .display div.i {
+  color: white;
+  width: 30px;
+  padding-right: 10px;
+}
+.footer .second ul li .display p {
+  padding-left: 20px;
+}
+.footer .second ul li .display p a {
+  color: #777777;
+  transition: 0.5s;
+}
+.footer .second ul li .display div.display-p {
+  color: #777777;
+  transition: 0.5s;
+}
+.footer .second ul li .display p a:hover {
+  color: var(--main-color);
+}
+.footer .second ul li .display div.display-p:hover {
+  color: var(--main-color);
+}
+.footer .third {
+  padding: 0 30px;
+  margin-top: 50px;
+}
+.footer .third .third-title h4 {
+  color: white;
+}
+.footer .third .third-title h4 span {
+  color: var(--main-color);
+}
+.footer .third .third-content {
+  padding: 30px 0;
+  display: flex;
+}
+.footer .third .third-content label {
+  color: white;
+  padding-bottom: 10px;
+}
+.footer .third .third-content input {
+  padding: 10px;
+  width: 80%;
+  border: none;
+  background-color: #12111c;
+  color: white;
+}
+.footer .third .third-textarea {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.footer .third .third-textarea div {
+  display: block;
+}
+.footer .third .third-textarea div label {
+  width: 100%;
+  color: white;
+  padding-bottom: 10px;
+}
+.footer .third .third-textarea div textarea {
+  width: 100%;
+  height: 7rem;
+  padding: 10px 10px;
+  border: none;
+  background-color: #12111c;
+  color: white;
+}
+.footer .third .third-button {
+  width: auto;
+}
+.footer .third .third-button a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: 0.5s;
+  padding: 15px 20px;
+  background-color: var(--main-color);
+}
+.footer .third .third-button a:hover {
+  color: black;
+  background-color: white;
+}
+#name {
+  color: white;
+  width: 100%;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+/* -- end - footer -- */
