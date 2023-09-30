@@ -247,7 +247,7 @@ body{
 }
 .fifth .form button{
     width: auto;
-    margin: 30px;
+    margin: 30px 0;
     height: auto;
     border: none;
 }
