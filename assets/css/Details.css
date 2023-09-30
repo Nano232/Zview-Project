@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    overflow-x: hidden;
+}
 :root{
     --main-color: #ff5e15;
     --background-color: #110f14;
@@ -171,6 +174,9 @@ body{
 }
 .fifth .title h4{
     font-weight: bold;
+}
+.fifth .parent-container > ul{
+    padding: 0;
 }
 .fifth .parent-container ul li{
     list-style-type: none;

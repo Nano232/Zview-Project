@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html{
+  overflow-x: hidden;
+}
 :root {
   --main-color: #ff5e15;
   --background-color: #110f14;
