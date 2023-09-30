@@ -187,6 +187,7 @@ body {
 }
 .fifth .parent-container ul li .parent .image {
   padding-right: 20px;
+  margin: 20px 0;
 }
 .fifth .parent-container ul li .parent .image img {
   border-radius: 50%;
@@ -326,6 +327,11 @@ body {
   .right .first .content .content-images div img {
     width: 100%;
     padding-bottom: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .fifth .parent-container ul li .parent {
+    display: block;
   }
 }
 /* -- end - right -- */
