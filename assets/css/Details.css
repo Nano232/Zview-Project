@@ -247,7 +247,8 @@ body{
 }
 .fifth .form button{
     width: auto;
-    margin-top: 30px;
+    margin: 30px;
+    height: auto;
     border: none;
 }
 .fifth .form button a{
@@ -255,7 +256,7 @@ body{
     font-weight: bold;
     color: white;
     transition: .5s;
-    padding: 20px 30px ;
+    padding: 20px 30px;
     background-color: var(--main-color);
 }
 .fifth .form button a:hover{
