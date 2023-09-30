@@ -52,6 +52,7 @@ body {
   color: var(--main-color);
 }
 .header .container .menu {
+  display: none;
   width: auto;
   color: white;
   cursor: pointer;
@@ -133,6 +134,7 @@ body {
     background-color: #777777;
     display: flex;
     padding-left: 0;
+    padding: 0;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -143,6 +145,7 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
   .header .container .links ul li {
     margin: 20px 0;

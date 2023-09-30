@@ -53,6 +53,7 @@ body {
 }
 .header .container .menu {
   width: auto;
+  display: none;
   color: white;
   cursor: pointer;
   padding: 10px 0;
@@ -102,8 +103,36 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  .header .links {
-    display: none;
+  .header .container .menu {
+    display: block;
+  }
+  .header .container .drop {
+    top: -43px;
+    left: 70px;
+  }
+  .header .container .links {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: auto;
+    background-color: #777777;
+    display: flex;
+    padding-left: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left: -100%;
+    transition: all 0.5s;
+  }
+  .header .container .links ul {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .header .container .links ul li {
+    margin: 20px 0;
   }
 }
 /* -- end - heading -- */
